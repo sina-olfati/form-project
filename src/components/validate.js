@@ -10,7 +10,7 @@ export const validate = data => {
 
     if(!data.email) {
         errors.email = "Email required"
-    } else if(!/\S+@\.\S+/.test(data.email)){
+    } else if(!/[a-z][a-z0-9_\.]{2,}@[a-z]{2,5}\.[a-z]{2,4}/i.test(data.email)){
         errors.email = "Email address is invalid"
     } else {
         delete errors.email
@@ -19,7 +19,7 @@ export const validate = data => {
 
     if(!data.password) {
         errors.password = "Password is required"
-    } else if(!data.password.lengh >= 6){
+    } else if(data.password.length < 6) {
         errors.password = "Password needs to be 6 character or more"
     } else {
         delete errors.password
