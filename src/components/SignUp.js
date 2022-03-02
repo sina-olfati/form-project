@@ -122,7 +122,7 @@ const SignUp = () => {
           )}
         </div>
         <div className={styles.formButtons}>
-          <a href="#">Login</a>
+          <a href="/login">Login</a>
           <button type="submit">Sign Up</button>
         </div>
       </form>
