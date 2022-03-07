@@ -1,3 +1,7 @@
+My intro:
+
+In this project i made a sign up and login form that is alike to googles form. it will check if your information is what the form wants and shows waht is wrong. in the end it will let you know if you signed up or not with a massage popping in the top-right corner.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
